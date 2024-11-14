@@ -7,7 +7,6 @@ wp-content/upgrade/*
 wp-content/backup-db/*
 
 wp-activate.php
-index.php
 local-xdebuginfo.php
 wp-blog-header.php
 wp-comments-post.php
