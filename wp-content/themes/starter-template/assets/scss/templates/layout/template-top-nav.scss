@@ -4,6 +4,9 @@
 
     .container {
         @include mixins.container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         input.search-field {
             width: 320px;
@@ -33,6 +36,38 @@
             &::-webkit-search-cancel-button {
                 -webkit-appearance: none;
                 appearance: none;
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px; 
+                height: 32px;
+                border-radius: 50%;
+                background-color: variables.$color-white;
+                color: variables.$color-primary;
+                text-decoration: none;
+
+                .social-icon {
+                    width: 18px;
+                    height: 18px;
+                    display: block;
+                }
+
+                &:hover {
+                    background-color: variables.$color-white-dark;
+                    color: variables.$color-white;
+
+                    .social-icon {
+                        fill: variables.$color-white;
+                    }
+                }
             }
         }
     }
