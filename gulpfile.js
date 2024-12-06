@@ -1,4 +1,3 @@
-// gulpfile.js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
@@ -43,11 +42,18 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('wp-content/themes/starter-template/dist/js'));
 });
 
+// Copy images to dist folder
+gulp.task('images', function() {
+    return gulp.src('wp-content/themes/starter-template/assets/img/**/*')
+        .pipe(gulp.dest('wp-content/themes/starter-template/dist/img'));
+});
+
 // Watch for changes
 gulp.task('watch', function() {
     gulp.watch('wp-content/themes/starter-template/assets/scss/**/*.scss', gulp.series('styles', 'admin-styles'));
     gulp.watch('wp-content/themes/starter-template/assets/js/**/*.js', gulp.series('scripts'));
+    gulp.watch('wp-content/themes/starter-template/assets/img/**/*', gulp.series('images'));
 });
 
 // Default task
-gulp.task('default', gulp.series('styles', 'admin-styles', 'scripts', 'watch'));
+gulp.task('default', gulp.series('styles', 'admin-styles', 'scripts', 'images', 'watch'));
