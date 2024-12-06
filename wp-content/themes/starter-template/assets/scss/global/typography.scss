@@ -10,6 +10,7 @@ h6 {
     margin-top: 0;
     font-family: variables.$font_heading;
     font-weight: variables.$font_weight_bold;
+    color: variables.$color-black;
 }
 
 h1 {
@@ -72,4 +73,5 @@ ol {
     line-height: variables.$font_line-height-body;
     font-weight: variables.$font_weight_regular;
     font-family: variables.$font_body;
+    color: variables.$color-black;
 }

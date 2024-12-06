@@ -1,4 +1,1 @@
-<footer>
-    This is the footer
-    <?php wp_footer(); ?>
-</footer>
+<?php get_template_part('templates/layout/template', 'footer'); ?>
