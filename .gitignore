@@ -13,6 +13,9 @@
 !wp-content/themes/Starter-Template/
 !wp-content/themes/Starter-Template/**/*
 
+# Ignore all files in the dist directory
+wp-content/themes/Starter-Template/dist/*
+
 # Ignore the uploads folder
 wp-content/uploads/
 
