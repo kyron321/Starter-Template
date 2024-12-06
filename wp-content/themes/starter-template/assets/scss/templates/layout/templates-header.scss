@@ -15,9 +15,56 @@ header {
                 width: 100%;
                 height: auto;
             }
-            
         }
 
-    }
+        .main-menu {
+            margin-left: auto;
 
+            .menu {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+                margin-bottom: 0;
+
+                li {
+                    position: relative;
+
+                    a {
+                        text-decoration: none;
+                        color: variables.$color-white;
+                        padding: 10px 15px;
+                        display: block;
+
+                        &:hover {
+                            background-color: variables.$color-secondary;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background-color: variables.$color-primary;
+                        list-style: none;
+                        padding: 10px 0;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+                        li {
+                            width: 200px;
+
+                            a {
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+
+                    &:hover ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }

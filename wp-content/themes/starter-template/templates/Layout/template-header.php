@@ -2,7 +2,8 @@
     <div class="container">
         <?php
         $logo = get_field('brand_logo', 'option');
-        if ($logo) : $logo_url = $logo['url'];
+        if ($logo) :
+            $logo_url = $logo['url'];
         ?>
         <div class="site-logo">
             <a href="<?php echo home_url(); ?>">
@@ -10,5 +11,7 @@
             </a>
         </div>
         <?php endif; ?>
+
+        <?php get_template_part('template-parts/layout/main', 'menu'); ?>
     </div>
 </header>
