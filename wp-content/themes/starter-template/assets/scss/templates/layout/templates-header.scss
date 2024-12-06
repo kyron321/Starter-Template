@@ -1,5 +1,7 @@
 header {
 
+    top: 0;
+    position: sticky;
     background-color: variables.$color-primary;
 
     .container {
