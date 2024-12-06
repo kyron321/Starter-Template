@@ -25,4 +25,10 @@ add_filter('allowed_block_types', 'disable_default_blocks', 10, 2);
 function disable_default_blocks($allowed_blocks, $post) {
     return [];
 }
+
+// Add support for main-menu
+function register_main_menu() {
+    register_nav_menu('main-menu', __('Main Menu'));
+}
+add_action('init', 'register_main_menu');
 ?>

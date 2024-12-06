@@ -1,8 +1,23 @@
 header {
 
+    background-color: variables.$color-primary;
+
     .container {
+        @include mixins.container;
+        display: flex;
+        align-items: center;
         min-height: 160px;
-        background-color: variables.$color-primary;
+
+        .site-logo {
+            width: 320px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+
     }
 
 }
