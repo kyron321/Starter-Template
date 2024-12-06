@@ -34,7 +34,7 @@ gulp.task('admin-styles', function() {
 
 // Minify JavaScript with sourcemaps
 gulp.task('scripts', function() {
-    return gulp.src('wp-content/themes/starter-template/src/js/**/*.js')
+    return gulp.src('wp-content/themes/starter-template/assets/js/**/*.js')
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         .pipe(uglify())
@@ -46,7 +46,7 @@ gulp.task('scripts', function() {
 // Watch for changes
 gulp.task('watch', function() {
     gulp.watch('wp-content/themes/starter-template/assets/scss/**/*.scss', gulp.series('styles', 'admin-styles'));
-    gulp.watch('wp-content/themes/starter-template/src/js/**/*.js', gulp.series('scripts'));
+    gulp.watch('wp-content/themes/starter-template/assets/js/**/*.js', gulp.series('scripts'));
 });
 
 // Default task
