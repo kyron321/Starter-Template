@@ -20,6 +20,18 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('wp-content/themes/starter-template/dist/css'));
 });
 
+// Compile SCSS for admin styles
+gulp.task('admin-styles', function() {
+    return gulp.src('wp-content/themes/starter-template/assets/scss/admin/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(concat('admin.scss'))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(cleanCSS())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('wp-content/themes/starter-template/dist/css'));
+});
+
 // Minify JavaScript with sourcemaps
 gulp.task('scripts', function() {
     return gulp.src('wp-content/themes/starter-template/src/js/**/*.js')
@@ -33,9 +45,9 @@ gulp.task('scripts', function() {
 
 // Watch for changes
 gulp.task('watch', function() {
-    gulp.watch('wp-content/themes/starter-template/assets/scss/**/*.scss', gulp.series('styles'));
+    gulp.watch('wp-content/themes/starter-template/assets/scss/**/*.scss', gulp.series('styles', 'admin-styles'));
     gulp.watch('wp-content/themes/starter-template/src/js/**/*.js', gulp.series('scripts'));
 });
 
 // Default task
-gulp.task('default', gulp.series('styles', 'scripts', 'watch'));
+gulp.task('default', gulp.series('styles', 'admin-styles', 'scripts', 'watch'));
