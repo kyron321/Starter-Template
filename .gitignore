@@ -25,5 +25,11 @@ wp-content/plugins/
 # Ignore the upgrade folder
 wp-content/upgrade/
 
+# Ignore the cache folder
+wp-content/cache/
+
+# Ignore the mu-plugins folder
+wp-content/mu-plugins/
+
 # Ignore .DS_Store files
 .DS_Store
