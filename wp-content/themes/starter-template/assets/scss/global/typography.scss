@@ -1,11 +1,75 @@
+// Typhography Headings
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+    text-wrap: auto;
     clear: both;
     margin-top: 0;
     font-family: variables.$font_heading;
     font-weight: variables.$font_weight_bold;
+}
+
+h1 {
+    font-size: variables.$font_size_heading_h1;
+    margin-bottom: variables.$font_spacing_bottom_h1;
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: variables.$font_size_heading_h1_mobile;
+    }
+}
+
+h2 {
+    font-size: variables.$font_size_heading_h2;
+    margin-bottom: variables.$font_spacing_bottom_h2;
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: variables.$font_size_heading_h2_mobile;
+    }
+}
+
+h3 {
+    font-size: variables.$font_size_heading_h3;
+    margin-bottom: variables.$font_spacing_bottom_h3;
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: variables.$font_size_heading_h3_mobile;
+    }
+}
+
+h4 {
+    font-size: variables.$font_size_heading_h4;
+    margin-bottom: variables.$font_spacing_bottom_h4;
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: variables.$font_size_heading_h4_mobile;
+    }
+}
+
+h5 {
+    font-size: variables.$font_size_heading_h5;
+    margin-bottom: variables.$font_spacing_bottom_h5;
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: variables.$font_size_heading_h5_mobile;
+    }
+}
+
+h6 {
+    font-size: variables.$font_size_heading_h6;
+    margin-bottom: variables.$font_spacing_bottom_h6;
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: variables.$font_size_heading_h6_mobile;
+    }
+}
+
+
+// Typography Body
+p,
+ul, 
+ol {
+    text-wrap: auto;
+    margin-top: 0;
+    margin-bottom: variables.$font_spacing_bottom_copy;
+    font-size: variables.$font_size_copy_regular;
+    line-height: variables.$font_line-height-body;
+    font-weight: variables.$font_weight_regular;
+    font-family: variables.$font_body;
 }

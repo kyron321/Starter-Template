@@ -1,2 +1,44 @@
+// Typography Headings
 $font_heading: 'Roboto', sans-serif;
 $font_weight_bold: 700;
+
+$font_size_heading_h1: 3.5rem;
+$font_spacing_bottom_h1: 1.5rem;
+$font_size_heading_h1_mobile: 2.5rem;
+
+
+$font_size_heading_h2: 2.5rem;
+$font_spacing_bottom_h2: 1.25rem;
+$font_size_heading_h2_mobile : 2rem;
+
+$font_size_heading_h3: 1.75rem;
+$font_spacing_bottom_h3: 1rem;
+$font_size_heading_h3_mobile: 1.5rem;
+
+$font_size_heading_h4: 1.5rem;
+$font_spacing_bottom_h4: 1rem;
+$font_size_heading_h4_mobile: 1.25rem;
+
+$font_size_heading_h5: 1.25rem;
+$font_spacing_bottom_h5: 1rem;
+$font_size_heading_h5_mobile: 1rem;
+
+$font_size_heading_h6: 1rem;
+$font_spacing_bottom_h6: 1rem;
+$font_size_heading_h6_mobile: 1rem;
+
+
+// Typography Body
+$font_body : 'Roboto Condesed', sans-serif;
+$font_spacing_bottom_copy: 1rem;
+$font_size_copy_regular: 1.1rem;
+$font_line-height-body: 1.5;
+$font_weight_regular: 400;
+
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-xxl: 1440px;
