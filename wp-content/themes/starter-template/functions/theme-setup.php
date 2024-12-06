@@ -19,4 +19,10 @@ function theme_scripts() {
     wp_enqueue_script('theme-script', get_template_directory_uri() . '/dist/js/main.min.js', [], THEME_VERSION, true);
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
+
+// Disable gutenburg default blocks
+add_filter('allowed_block_types', 'disable_default_blocks', 10, 2);
+function disable_default_blocks($allowed_blocks, $post) {
+    return [];
+}
 ?>
