@@ -9,8 +9,9 @@ const path = require('path');
 
 // Compile SCSS to a single CSS file with sourcemaps
 gulp.task('styles', function() {
-    return gulp.src('wp-content/themes/starter-template/assets/scss/**/*.scss')
+    return gulp.src('wp-content/themes/starter-template/assets/scss/style.scss')
         .pipe(sourcemaps.init())
+        .pipe(concat('style.scss'))
         .pipe(sass().on('error', sass.logError))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
