@@ -45,9 +45,11 @@ header {
                     a {
                         text-decoration: none;
                         color: variables.$color-white;
+                        margin-bottom: 0;
 
                         &:hover {
                             color: variables.$color-white-dark;
+                            font-weight: bold;
                         }
                     }
                 }
@@ -86,6 +88,7 @@ header {
 
                 a {
                     padding: 8px 0;
+                    margin-bottom: 0;
                 }
             }
 

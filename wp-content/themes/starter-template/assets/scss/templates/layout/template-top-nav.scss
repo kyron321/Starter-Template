@@ -47,12 +47,13 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                width: 32px; 
+                width: 32px;
                 height: 32px;
                 border-radius: 50%;
                 background-color: variables.$color-white;
                 color: variables.$color-primary;
                 text-decoration: none;
+                margin-bottom: 0;
 
                 .social-icon {
                     width: 18px;
