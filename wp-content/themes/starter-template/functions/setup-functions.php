@@ -13,12 +13,13 @@ add_action('wp_enqueue_scripts', 'theme_styles');
 function admin_styles()
 {
     global $pagenow;
-    if (is_admin() || is_user_logged_in() || $pagenow === 'wp-login.php') {
+    if (is_user_logged_in() || $pagenow === 'wp-login.php') {
         wp_enqueue_style('admin-style', get_template_directory_uri() . '/dist/css/admin.min.css', [], THEME_VERSION);
     }
 }
-add_action('admin_enqueue_scripts', 'admin_styles');
-add_action('login_enqueue_scripts', 'admin_styles');
+add_action('wp_enqueue_scripts', 'admin_styles'); // Enqueue on frontend
+add_action('admin_enqueue_scripts', 'admin_styles'); // Enqueue on admin pages
+add_action('login_enqueue_scripts', 'admin_styles'); // Enqueue on login page
 
 // Enqueue theme scripts
 function theme_scripts()
