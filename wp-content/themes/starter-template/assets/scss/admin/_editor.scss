@@ -1,0 +1,36 @@
+html :where(.editor-styles-wrapper) {
+    background-color: variables.$color-white;
+    color: initial;
+    font-family: serif;
+    font-size: medium;
+    line-height: normal;
+}
+
+.components-button.is-primary {
+    background: variables.$color-primary;
+    border-color: variables.$color-primary;
+    color: variables.$color-white;
+}
+
+.components-button.is-primary:hover:not(:disabled) {
+    background: variables.$color-primary-dark;
+    color: variables.$color-white;
+}
+
+.components-button:hover:not(:disabled, [aria-disabled=true]),
+.components-button[aria-expanded=true] {
+    color: variables.$color-primary-dark;
+}
+
+.components-button.is-link {
+    color: variables.$color-primary;
+}
+
+.components-button.is-tertiary {
+    color: variables.$color-primary;
+}
+
+.components-button:hover:not(:disabled, [aria-disabled=true]),
+.components-button[aria-expanded=true] {
+    color: variables.$color-primary-dark;
+}
