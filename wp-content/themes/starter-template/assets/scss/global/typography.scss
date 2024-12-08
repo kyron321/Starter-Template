@@ -16,6 +16,7 @@ h6 {
 h1 {
     font-size: variables.$font_size_heading_h1;
     margin-bottom: variables.$font_spacing_bottom_h1;
+
     @media (max-width: variables.$breakpoint-sm) {
         font-size: variables.$font_size_heading_h1_mobile;
     }
@@ -24,6 +25,7 @@ h1 {
 h2 {
     font-size: variables.$font_size_heading_h2;
     margin-bottom: variables.$font_spacing_bottom_h2;
+
     @media (max-width: variables.$breakpoint-sm) {
         font-size: variables.$font_size_heading_h2_mobile;
     }
@@ -32,6 +34,7 @@ h2 {
 h3 {
     font-size: variables.$font_size_heading_h3;
     margin-bottom: variables.$font_spacing_bottom_h3;
+
     @media (max-width: variables.$breakpoint-sm) {
         font-size: variables.$font_size_heading_h3_mobile;
     }
@@ -40,6 +43,7 @@ h3 {
 h4 {
     font-size: variables.$font_size_heading_h4;
     margin-bottom: variables.$font_spacing_bottom_h4;
+
     @media (max-width: variables.$breakpoint-sm) {
         font-size: variables.$font_size_heading_h4_mobile;
     }
@@ -48,6 +52,7 @@ h4 {
 h5 {
     font-size: variables.$font_size_heading_h5;
     margin-bottom: variables.$font_spacing_bottom_h5;
+
     @media (max-width: variables.$breakpoint-sm) {
         font-size: variables.$font_size_heading_h5_mobile;
     }
@@ -56,6 +61,7 @@ h5 {
 h6 {
     font-size: variables.$font_size_heading_h6;
     margin-bottom: variables.$font_spacing_bottom_h6;
+
     @media (max-width: variables.$breakpoint-sm) {
         font-size: variables.$font_size_heading_h6_mobile;
     }
@@ -64,7 +70,8 @@ h6 {
 
 // Typography Body
 p,
-ul, 
+a,
+ul,
 ol {
     text-wrap: auto;
     margin-top: 0;

@@ -36,4 +36,10 @@ function register_main_menu() {
     register_nav_menu('main-menu', __('Main Menu'));
 }
 add_action('init', 'register_main_menu');
+
+// Add support for footer-menu
+function register_footer_menu() {
+    register_nav_menu('footer-menu', __('Footer Menu'));
+}
+add_action('init', 'register_footer_menu');
 ?>
