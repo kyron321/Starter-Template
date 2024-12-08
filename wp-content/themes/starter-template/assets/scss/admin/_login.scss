@@ -1,3 +1,79 @@
-body {
+body.login.js.login-action-login.wp-core-ui.locale-en-us {
     background-color: variables.$color-primary;
+}
+
+.login #backtoblog a,
+.login #nav a {
+    color: variables.$color-white;
+
+    &:hover {
+        color: variables.$color-white-dark;
+    }
+}
+
+.login .message,
+.login .notice,
+.login .success {
+    border-left: 4px solid variables.$color-black;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: variables.$color-white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    word-wrap: break-word;
+}
+
+.login form {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px;
+    font-weight: 400;
+    overflow: hidden;
+    background: variables.$color-white;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+}
+
+.wp-core-ui .button-primary {
+    background: variables.$color-primary;
+    border-color: variables.$color-primary;
+    color: variables.$color-white;
+    text-decoration: none;
+    text-shadow: none;
+
+    &:hover {
+        background: variables.$color-primary-dark;
+        border-color: variables.$color-primary-dark;
+    }
+}
+
+input[type=checkbox]:focus,
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=datetime]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=radio]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+select:focus,
+textarea:focus {
+    border-color: variables.$color-primary;
+    box-shadow: 0 0 0 1px variables.$color-primary;
+    outline: 2px solid transparent;
+}
+
+.login .button.wp-hide-pw {
+    color: variables.$color-primary;
+
+    &:hover {
+        color: variables.$color-primary-dark;
+    }
 }
