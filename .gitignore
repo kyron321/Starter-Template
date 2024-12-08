@@ -31,5 +31,9 @@ wp-content/cache/
 # Ignore the mu-plugins folder
 wp-content/mu-plugins/
 
+# Ignore every theme besides the Starter-Template theme
+wp-content/themes/*
+!wp-content/themes/Starter-Template/
+
 # Ignore .DS_Store files
 .DS_Store
