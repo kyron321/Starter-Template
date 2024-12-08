@@ -34,12 +34,6 @@ function enqueue_google_fonts()
 }
 add_action('wp_enqueue_scripts', 'enqueue_google_fonts');
 
-// Disable gutenburg default blocks
-add_filter('allowed_block_types', 'disable_default_blocks', 10, 2);
-function disable_default_blocks($allowed_blocks, $post)
-{
-    return [];
-}
 
 // Add support for main-menu
 function register_main_menu()

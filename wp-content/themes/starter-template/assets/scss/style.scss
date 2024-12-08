@@ -2,9 +2,12 @@
 @use './global/mixins';
 @use './global/typography';
 @use './global/base';
+
 @use './templates/layout/template-footer';
 @use './templates/layout/templates-header';
 @use './templates/layout/template-top-nav';
+
+@use './blocks/block-settings.scss';
 
 body {
     font-family: variables.$font_body;

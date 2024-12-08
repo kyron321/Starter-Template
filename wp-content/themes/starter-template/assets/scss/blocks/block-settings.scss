@@ -1,0 +1,25 @@
+@use '../global/variables';
+
+.padding-top-large {
+    padding-top: 4rem;
+}
+
+.padding-bottom-large {
+    padding-bottom: 4rem;
+}
+
+.background-color-primary {
+    background-color: variables.$color-primary;
+}
+
+.background-color-secondary {
+    background-color: variables.$color-secondary;
+}
+
+.background-color-white {
+    background-color: variables.$color-white;
+}
+
+// .background-color-grey {
+//     background-color: variables.$color-grey;
+// }
