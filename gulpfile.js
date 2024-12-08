@@ -11,7 +11,6 @@ const path = require('path');
 gulp.task('styles', function() {
     return gulp.src('wp-content/themes/starter-template/assets/scss/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(concat('style.scss'))
         .pipe(sass().on('error', sass.logError))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
