@@ -1,1 +1,182 @@
 @use '../global/variables';
+
+body {
+    background: variables.$color-white;
+}
+
+#wpadminbar {
+    color: #fff;
+    background: variables.$color-black;
+}
+
+#adminmenu,
+#adminmenuback,
+#adminmenuwrap {
+    background: variables.$color-black;
+}
+
+#wpadminbar {
+    background: variables.$color-black;
+}
+
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top {
+    color: #fff;
+    background: variables.$color-primary;
+
+    &:hover {
+        color: #fff;
+        background: variables.$color-primary-dark;
+    }
+}
+
+#adminmenu a:hover,
+#adminmenu li.menu-top:hover,
+#adminmenu li.opensub>a.menu-top,
+#adminmenu li>a.menu-top:focus {
+    color: #fff;
+    background-color: variables.$color-primary-dark;
+}
+
+#adminmenu .wp-submenu {
+    list-style: none;
+    position: absolute;
+    top: -1000em;
+    left: 160px;
+    overflow: visible;
+    word-wrap: break-word;
+    padding: 7px 0 8px;
+    z-index: 9999;
+    background-color: variables.$color-black-light;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+#wpadminbar .menupop .ab-sub-wrapper,
+#wpadminbar .shortlink-input {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    background: variables.$color-black-light;
+    position: absolute;
+    float: none;
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+    background: variables.$color-black-light;
+    color: variables.$color-white;
+}
+
+#adminmenu li a:focus div.wp-menu-image:before,
+#adminmenu li.opensub div.wp-menu-image:before,
+#adminmenu li:hover div.wp-menu-image:before {
+    color: variables.$color-white;
+}
+
+ul#adminmenu a.wp-has-current-submenu:after,
+ul#adminmenu>li.current>a.current:after {
+    border-right-color: variables.$color-black;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after,
+#adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:after {
+    border-right: none;
+}
+
+#adminmenu .wp-submenu a:focus,
+#adminmenu .wp-submenu a:hover,
+#adminmenu a:hover,
+#adminmenu li.menu-top>a:focus {
+    color: variables.$color-white;
+}
+
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover>a,
+#wpadminbar .quicklinks .menupop ul li a:focus,
+#wpadminbar .quicklinks .menupop ul li a:focus strong,
+#wpadminbar .quicklinks .menupop ul li a:hover,
+#wpadminbar .quicklinks .menupop ul li a:hover strong,
+#wpadminbar .quicklinks .menupop.hover ul li a:focus,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:focus,
+#wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:hover,
+#wpadminbar li #adminbarsearch.adminbar-focused:before,
+#wpadminbar li .ab-item:focus .ab-icon:before,
+#wpadminbar li .ab-item:focus:before,
+#wpadminbar li a:focus .ab-icon:before,
+#wpadminbar li.hover .ab-icon:before,
+#wpadminbar li.hover .ab-item:before,
+#wpadminbar li:hover #adminbarsearch:before,
+#wpadminbar li:hover .ab-icon:before,
+#wpadminbar li:hover .ab-item:before,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover {
+    color: variables.$color-primary;
+}
+
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+    border: 1px solid variables.$color-primary;
+    color: variables.$color-primary;
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+    color: variables.$color-primary;
+    border-color: variables.$color-primary;
+    background: #f6f7f7;
+    vertical-align: top;
+}
+
+a {
+    color: variables.$color-primary;
+
+    &:hover {
+        color: variables.$color-primary-dark;
+        font-weight: bold;
+    }
+}
+
+.wp-core-ui .button-link {
+    color: variables.$color-primary;
+
+    &:hover {
+        color: variables.$color-primary-dark;
+        font-weight: bold;
+    }
+}
+
+.wrap .add-new-h2:hover,
+.wrap .page-title-action:hover {
+    background: #f0f0f1;
+    border-color: variables.$color-primary;
+    color: variables.$color-primary;
+}
+
+.wp-core-ui .button-secondary:hover,
+.wp-core-ui .button.hover,
+.wp-core-ui .button:hover {
+    background: #f0f0f1;
+    border-color: variables.$color-primary;
+    color: variables.$color-primary;
+}
+
+.wp-core-ui select:focus {
+    border-color: variables.$color-primary;
+    color: variables.$color-primary;
+    box-shadow: 0 0 0 1px variables.$color-primary;
+}
+
+.wp-core-ui select:hover {
+    border-color: variables.$color-primary;
+    color: variables.$color-primary;
+}
+
+.view-switch a.current:before {
+    color: variables.$color-primary;
+}
