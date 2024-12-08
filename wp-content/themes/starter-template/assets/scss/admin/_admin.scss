@@ -163,7 +163,7 @@ a {
 .wp-core-ui .button:hover {
     background: #f0f0f1;
     border-color: variables.$color-primary;
-    color: variables.$color-primary;
+    color: variables.$color-white;
 }
 
 .wp-core-ui select:focus {
@@ -179,4 +179,16 @@ a {
 
 .view-switch a.current:before {
     color: variables.$color-primary;
+}
+
+#wp-auth-check-wrap #wp-auth-check {
+    background: variables.$color-primary;
+}
+
+#wp-auth-check-wrap .wp-auth-check-close {
+    color: white;
+
+    &:hover {
+        color: variables.$color-white-dark;
+    }
 }
