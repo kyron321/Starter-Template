@@ -6,12 +6,12 @@ function get_block_classes($block_settings)
     if (isset($block_settings['block_settings'])) {
         $settings = $block_settings['block_settings'];
 
-        if (!empty($settings['padding_top'])) {
-            $classes[] = 'padding-top-' . esc_attr($settings['padding_top']);
+        if (!empty($settings['margin_top'])) {
+            $classes[] = 'margin-top-' . esc_attr($settings['margin_top']);
         }
 
-        if (!empty($settings['padding_bottom'])) {
-            $classes[] = 'padding-bottom-' . esc_attr($settings['padding_bottom']);
+        if (!empty($settings['margin_bottom'])) {
+            $classes[] = 'margin-bottom-' . esc_attr($settings['margin_bottom']);
         }
 
         if (!empty($settings['background_color'])) {

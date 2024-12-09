@@ -38,8 +38,8 @@
             "sub_fields": [
                 {
                     "key": "field_67561fce25b54",
-                    "label": "Padding Top",
-                    "name": "padding_top",
+                    "label": "Margin Top",
+                    "name": "margin_top",
                     "aria-label": "",
                     "type": "select",
                     "instructions": "",
@@ -65,8 +65,8 @@
                 },
                 {
                     "key": "field_6756207b25b55",
-                    "label": "Padding Bottom",
-                    "name": "padding_bottom",
+                    "label": "Margin Bottom",
+                    "name": "margin_bottom",
                     "aria-label": "",
                     "type": "select",
                     "instructions": "",
@@ -140,5 +140,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1733700933
+    "modified": 1733703350
 }
