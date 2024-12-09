@@ -8,6 +8,7 @@
 @use './templates/layout/template-top-nav';
 
 @use './blocks/block-settings.scss';
+@use './blocks/banner.scss';
 
 body {
     font-family: variables.$font_body;
